@@ -1,11 +1,11 @@
-package main
+package player
 
 type Player struct {
-	Name string
-	Lifes int
-	Armors int
+	Name      string
+	Lifes     int
+	Armors    int
 	Inventory int
-	Money int
+	Money     int
 }
 
 func (p Player) GetName() string {

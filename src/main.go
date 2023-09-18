@@ -1,8 +1,11 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"ftl/src/player"
+)
 
 func main() {
-	main.SetName("zeub")
-	fmt.Print(main.GetName())
+	user := player.Player{Name: "JK"}
+	fmt.Print(user.GetName())
 }

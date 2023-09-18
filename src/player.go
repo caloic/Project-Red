@@ -2,6 +2,9 @@ package main
 
 type Player struct {
 	Name string
+	Lifes int
+	Armors int
+	Inventory int
 	Money int
 }
 

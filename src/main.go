@@ -2,10 +2,10 @@ package main
 
 import (
 	"fmt"
-	"ftl/src/player"
+	"ftl/src/mob"
 )
 
 func main() {
-	user := player.Player{Name: "JK"}
+	user := mob.Player{Name: "JK"}
 	fmt.Print(user.GetName())
 }

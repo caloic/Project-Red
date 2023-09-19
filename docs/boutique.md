@@ -37,7 +37,6 @@ Enfin vous pouvez recruter des coéquipiers vous permettant d'agrandir votre éq
 | Gold Axe         |                |
 | Diamond Axe      |                |
 | Shield           |                |
-| Totem of undying |                |
 
 ## Recrutement de coéquipiers
 | Coéquipiers      | Prix                     |

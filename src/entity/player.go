@@ -7,10 +7,9 @@ import (
 type Player struct {
 	Name      string
 	Lifes     int
-	Armors    int
+	Armors    enum.Armors
 	Inventory int
 	Money     int
-	Armor	  enum.Armor
 }
 
 func GetName(p *Player) string {
@@ -29,11 +28,11 @@ func SetLifes(p *Player, newLifes int) {
 	p.Lifes = newLifes
 }
 
-func GetArmors(p *Player) enum.Armor {
+func GetArmors(p *Player) enum.Armors {
 	return p.Armors
 }
 
-func SetArmors(p *Player, newArmors enum.Armor) {
+func SetArmors(p *Player, newArmors enum.Armors) {
 	p.Armors = newArmors
 }
 

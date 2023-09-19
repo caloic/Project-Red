@@ -7,7 +7,6 @@ import (
 type Illager struct {
 	Type      enum.Illager
 	Lifes     int
-	Armors    int
 	Inventory int
 }
 
@@ -25,12 +24,4 @@ func GetIllagerLifes(i *Illager) int {
 
 func SetIllageerLifes(i *Illager, newIllagerLifes int) {
 	i.Lifes = newIllagerLifes
-}
-
-func GetIllagerArmors(i *Illager) int {
-	return i.Armors
-}
-
-func SetIllagerArmors(i *Illager, newIllagerArmors int) {
-	i.Armors = newIllagerArmors
 }

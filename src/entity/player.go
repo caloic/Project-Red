@@ -1,11 +1,16 @@
 package entity
 
+import (
+	"ftl/src/enum"
+)
+
 type Player struct {
 	Name      string
 	Lifes     int
 	Armors    int
 	Inventory int
 	Money     int
+	Armor	  enum.Armor
 }
 
 func GetName(p *Player) string {
@@ -24,11 +29,11 @@ func SetLifes(p *Player, newLifes int) {
 	p.Lifes = newLifes
 }
 
-func GetArmors(p *Player) int {
+func GetArmors(p *Player) enum.Armor {
 	return p.Armors
 }
 
-func SetArmors(p *Player, newArmors int) {
+func SetArmors(p *Player, newArmors enum.Armor) {
 	p.Armors = newArmors
 }
 

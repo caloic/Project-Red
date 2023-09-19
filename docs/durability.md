@@ -1,5 +1,5 @@
 # Durabilité et Fonctionnement des attaques
-Chaque armes ont une durabilité différente ainsi que des fonctionnements variant.
+Chacune des armes a une durabilité différente ainsi que des fonctionnements variants.
 
 ## Durabilité
 | Items              | Durabilité     |

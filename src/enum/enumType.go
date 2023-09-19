@@ -4,6 +4,7 @@ type Illager int
 type Sword int
 type Axe int
 type Zone int
+type Armor int
 
 const (
 	Pillager    Illager = iota
@@ -35,4 +36,11 @@ const (
 	Fight    Zone = iota
 	Resource Zone = iota
 	Bonus    Zone = iota
+)
+
+const (
+	LeatherArmor Armor = iota
+	IronArmor Armor = iota
+	GoldenArmor Armor = iota
+	DiamondArmor Armor = iota
 )

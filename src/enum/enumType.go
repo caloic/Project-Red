@@ -4,7 +4,7 @@ type Illager int
 type Sword int
 type Axe int
 type Zone int
-type Armor int
+type Armors int
 
 const (
 	Pillager    Illager = iota
@@ -39,8 +39,8 @@ const (
 )
 
 const (
-	LeatherArmor Armor = iota
-	IronArmor Armor = iota
-	GoldenArmor Armor = iota
-	DiamondArmor Armor = iota
+	LeatherArmor Armors = iota
+	IronArmor Armors = iota
+	GoldenArmor Armors = iota
+	DiamondArmor Armors = iota
 )

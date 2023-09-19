@@ -3,6 +3,7 @@ package enum
 type Illager int
 type Sword int
 type Axe int
+type Zone int
 
 const (
 	Pillager    Illager = iota
@@ -26,4 +27,12 @@ const (
 	IronAxe    Axe = iota
 	Golden     Axe = iota
 	DiamondAxe Axe = iota
+)
+
+const (
+	Shop     Zone = iota
+	Safe     Zone = iota
+	Fight    Zone = iota
+	Resource Zone = iota
+	Bonus    Zone = iota
 )

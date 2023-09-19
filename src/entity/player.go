@@ -4,35 +4,42 @@ type Player struct {
 	Name      string
 	Lifes     int
 	Armors    int
-	Inventory map[string]int
+	Inventory int
 	Money     int
 }
 
-func (p Player) GetName() string {
+func GetName(p *Player) string {
 	return p.Name
 }
 
-func (p Player) SetName(name string) {
-	p.Name = name
+func SetName(p *Player, newName string) {
+	p.Name = newName
 }
 
-func (p Player) GetLifes() int {
+func GetLifes(p *Player) int {
 	return p.Lifes
 }
 
-func (p Player) GetArmors() int {
+func SetLifes(p *Player, newLifes int) {
+	p.Lifes = newLifes
+}
+
+func GetArmors(p *Player) int {
 	return p.Armors
 }
 
-// Taille de l'inventaire du joueur
-func (p Player) GetInventory() map {
+func SetArmors(p *Player, newArmors int) {
+	p.Armors = newArmors
+}
+
+func GetInventory(p *Player) int {
 	return p.Inventory
 }
 
-func (p Player) GetMoney() int {
+func GetMoney(p *Player) int {
 	return p.Money
 }
 
-func (p Player) SetMoney(money int) {
-	p.Money = money
+func SetMoney(p *Player, newMoney int) {
+	p.Money = newMoney
 }

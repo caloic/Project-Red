@@ -1,28 +1,36 @@
 package entity
 
-type Pillager struct {
-	Type      string
+import (
+	"ftl/src/enum"
+)
+
+type Illager struct {
+	Type      enum.Illager
 	Lifes     int
 	Armors    int
 	Inventory int
 }
 
-func (p Pillager) GetName() string {
-	return p.Name
+func GetType(i *Illager) enum.Illager {
+	return i.Type
 }
 
-func (p Pillager) SetName() string {
-	p.Name = name
+func SetType(i *Illager, newType enum.Illager) {
+	i.Type = newType
 }
 
-func (p Villager) GetLifes() string {
-	return p.Lifes
+func GetIllagerLifes(i *Illager) int {
+	return i.Lifes
 }
 
-func (p Villager) GetArmors() string {
-	return p.Armors
+func SetIllageerLifes(i *Illager, newIllagerLifes int) {
+	i.Lifes = newIllagerLifes
 }
 
-func (p Villager) GetInventory() string {
-	return p.Inventory
+func GetIllagerArmors(i *Illager) int {
+	return i.Armors
+}
+
+func SetIllagerArmors(i *Illager, newIllagerArmors int) {
+	i.Armors = newIllagerArmors
 }

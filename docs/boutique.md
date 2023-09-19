@@ -4,39 +4,43 @@ Il est également possible de crafter vos objets avec les ressources que vous ob
 Enfin vous pouvez recruter des coéquipiers vous permettant d'agrandir votre équipe dans vos combats.
 
 ## Items disponibles dans la boutique
-| Items            | Prix           |
-| ---------------- |:--------------:|
-| Leather Armor    |                |
-| Iron Armor       |                |
-| Gold Armor       |                |
-| Diamond Armor    |                |
-| Stone Sword      |                |
-| Iron Sword       |                |
-| Gold Sword       |                |
-| Diamond Sword    |                |
-| Stone Axe        |                |
-| Iron Axe         |                |
-| Gold Axe         |                |
-| Diamond Axe      |                |
-| Shield           |                |
-| Totem of undying |                |
+| Items              | Prix           |
+| ------------------ |:--------------:|
+| Leather Armor      |                |
+| Iron Armor         |                |
+| Gold Armor         |                |
+| Diamond Armor      |                |
+| Stone Sword        |                |
+| Iron Sword         |                |
+| Gold Sword         |                |
+| Diamond Sword      |                |
+| Stone Axe          |                |
+| Iron Axe           |                |
+| Gold Axe           |                |
+| Diamond Axe        |                |
+| Shield             |                |
+| Bow                |                |
+| Crossbow           |                |
+| Totem of undying   |                |
 
 ## Crafts possibles dans la boutique
 | Items            | Ressources     |
-| ---------------- |:--------------:|
-| Leather Armor    |                |
-| Iron Armor       |                |
-| Gold Armor       |                |
-| Diamond Armor    |                |
-| Stone Sword      |                |
-| Iron Sword       |                |
-| Gold Sword       |                |
-| Diamond Sword    |                |
-| Stone Axe        |                |
-| Iron Axe         |                |
-| Gold Axe         |                |
-| Diamond Axe      |                |
-| Shield           |                |
+| ------------------ |:--------------:|
+| Leather Armor      |                |
+| Iron Armor         |                |
+| Gold Armor         |                |
+| Diamond Armor      |                |
+| Stone Sword        |                |
+| Iron Sword         |                |
+| Gold Sword         |                |
+| Diamond Sword      |                |
+| Stone Axe          |                |
+| Iron Axe           |                |
+| Gold Axe           |                |
+| Diamond Axe        |                |
+| Shield             |                |
+| Bow                |                |
+| Crossbow           |                |
 
 ## Recrutement de coéquipiers
 | Coéquipiers      | Prix                     |

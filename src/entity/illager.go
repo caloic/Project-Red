@@ -1,10 +1,10 @@
 package entity
 
 type Pillager struct {
-	Type string
-	Lifes int 
-	Armors int
-	Inventory int 
+	Type      string
+	Lifes     int
+	Armors    int
+	Inventory int
 }
 
 func (p Pillager) GetName() string {

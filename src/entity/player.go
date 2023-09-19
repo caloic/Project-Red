@@ -4,16 +4,8 @@ type Player struct {
 	Name      string
 	Lifes     int
 	Armors    int
-	Inventory int
+	Inventory map[string]int
 	Money     int
-	//Ressource
-	Wood    int
-	Stone   int
-	Coal    int
-	Iron    int
-	Gold    int
-	Diamond int
-	emerald int
 }
 
 func (p Player) GetName() string {
@@ -33,7 +25,7 @@ func (p Player) GetArmors() int {
 }
 
 // Taille de l'inventaire du joueur
-func (p Player) GetInventory() int {
+func (p Player) GetInventory() map {
 	return p.Inventory
 }
 

@@ -35,10 +35,18 @@ func SetArmors(p *Player, newArmors enum.Armors) {
 	p.Armors = newArmors
 }
 
-func GetHoldingSword(p *Player) map[enum.Sword]int {
-	return p.HoldingSword
+func GetHoldingSword(p *Player) enum.Sword {
+	var key enum.Sword
+	for k := range p.HoldingSword {
+		key = k
+	}
+	return key
 }
 
 func SetHoldingSword(p *Player, newHoldingSword map[enum.Sword]int) {
-	p.HoldingSword = newHoldingSword
+	var key enum.Sword
+	for k := range p.HoldingSword {
+		key = k
+	}
+	p.HoldingSword[key] = newHoldingSword
 }

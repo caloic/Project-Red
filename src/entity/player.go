@@ -5,9 +5,10 @@ import (
 )
 
 type Player struct {
-	Name   string
-	Lifes  int
-	Armors enum.Armors
+	Name         string
+	Lifes        int
+	Armors       enum.Armors
+	HoldingSword map[enum.Sword]int
 }
 
 func GetName(p *Player) string {
@@ -32,4 +33,12 @@ func GetArmors(p *Player) enum.Armors {
 
 func SetArmors(p *Player, newArmors enum.Armors) {
 	p.Armors = newArmors
+}
+
+func GetHoldingSword(p *Player) map[enum.Sword]int {
+	return p.HoldingSword
+}
+
+func SetHoldingSword(p *Player, newHoldingSword map[enum.Sword]int) {
+	p.HoldingSword = newHoldingSword
 }

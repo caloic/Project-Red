@@ -8,8 +8,6 @@ type Player struct {
 	Name      string
 	Lifes     int
 	Armors    enum.Armors
-	Inventory int
-	Money     int
 }
 
 func GetName(p *Player) string {
@@ -34,16 +32,4 @@ func GetArmors(p *Player) enum.Armors {
 
 func SetArmors(p *Player, newArmors enum.Armors) {
 	p.Armors = newArmors
-}
-
-func GetInventory(p *Player) int {
-	return p.Inventory
-}
-
-func GetMoney(p *Player) int {
-	return p.Money
-}
-
-func SetMoney(p *Player, newMoney int) {
-	p.Money = newMoney
 }

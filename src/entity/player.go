@@ -8,7 +8,6 @@ type Player struct {
 	Name   string
 	Lifes  int
 	Armors enum.Armors
-	HoldingSword[2]
 }
 
 func GetName(p *Player) string {

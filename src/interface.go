@@ -12,7 +12,7 @@ func main() {
 	rl.SetTargetFPS(120)
 
 	// Charger l'image PNG en tant qu'arrière-plan
-	background := rl.LoadTexture("background.png")
+	background := rl.LoadTexture("background.jpg")
 
 	// Couleurs personnalisées
 	textColor := rl.RayWhite

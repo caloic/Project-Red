@@ -22,7 +22,7 @@ func Shop() {
 	case 3:
 		fmt.Println("Ajouter un nouveau coéquipier")
 	case 4:
-		fmt.Println("Totem of undyng")
+		fmt.Println("Totem of undying")
 		fmt.Println("Crossbow")
 	}
 }

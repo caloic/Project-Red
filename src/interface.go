@@ -5,7 +5,7 @@ import (
 )
 
 func main() {
-	rl.InitWindow(960, 640, "Minecraft Edition Pixel War")
+	rl.InitWindow(960, 640, "Minecraft Edition Pixel War 1.20.1")
 	defer rl.CloseWindow()
 	rl.SetTargetFPS(120)
 

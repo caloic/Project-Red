@@ -17,6 +17,7 @@ const (
 )
 
 const (
+	WoodenSword  Sword = iota
 	StoneSword   Sword = iota
 	IronSword    Sword = iota
 	GoldenSword  Sword = iota
@@ -39,8 +40,9 @@ const (
 )
 
 const (
+	Nothing      Armors = iota
 	LeatherArmor Armors = iota
-	IronArmor Armors = iota
-	GoldenArmor Armors = iota
+	IronArmor    Armors = iota
+	GoldenArmor  Armors = iota
 	DiamondArmor Armors = iota
 )

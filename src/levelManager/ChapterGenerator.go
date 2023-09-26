@@ -17,10 +17,13 @@ func ChangeChapter(c *Chapter) {
 
 func RandomZone(c *Chapter) {
 	choice := rand.Intn(4) + 1
+	var path []enum.Zone
+	var pathchoice int
 	for choice > 0 {
 
 		randomIndex := rand.Intn(int(enum.Bonus))
 		randomZone := enum.Zone(randomIndex)
+		path = append(path, randomZone)
 		switch randomZone {
 		case enum.Safe:
 			fmt.Println("Safe")
@@ -31,8 +34,14 @@ func RandomZone(c *Chapter) {
 		case enum.Fight:
 			fmt.Println("Fight")
 		case enum.Bonus:
-			fmt.Println("Bonus")
+			fmt.Println("Safe")
 		}
 		choice -= 1
+	}
+	fmt.Println(path)
+	fmt.Scan(&pathchoice)
+	switch pathchoice {
+	case 1:
+		fmt.Println()
 	}
 }

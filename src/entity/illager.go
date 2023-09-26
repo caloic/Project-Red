@@ -5,9 +5,8 @@ import (
 )
 
 type Illager struct {
-	Type      enum.Illager
-	Lifes     int
-	Inventory int
+	Type  enum.Illager
+	Lifes int
 }
 
 func GetType(i *Illager) enum.Illager {

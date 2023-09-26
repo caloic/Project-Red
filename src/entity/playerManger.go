@@ -13,7 +13,13 @@ func CreatePlayer() {
 		playerList = append(playerList, Player{Hp: 20, Armors: enum.Nothing, Name: "Soldier1"})
 	case 2:
 		playerList = append(playerList, Player{Hp: 20, Armors: enum.Nothing, Name: "Soldier2"})
+	case 3:
+		playerList = append(playerList, Player{Hp: 20, Armors: enum.Nothing, Name: "Soldier3"})
 	}
+}
+
+func LooseHealth(p Player, pv int) {
+	p.Hp = p.Hp - pv
 }
 
 func GetPlayerList() []Player {

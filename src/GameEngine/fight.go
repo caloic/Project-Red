@@ -3,6 +3,7 @@ package GameEngine
 import (
 	"fmt"
 	"ftl/src/entity"
+	"ftl/src/levelManager"
 )
 
 type Arena struct {
@@ -16,7 +17,7 @@ func BattleArena() {
 	mainPlayer := entity.GetPlayerList()[0]
 
 	for len(arena.EnemiesList) > 0 && mainPlayer.Hp > 0 {
-		fmt.Println("Round:", arena.Round)
+		fmt.Println("Début du tour:", arena.Round)
 		arena.Round++
 
 		if mainPlayer.Hp <= 0 {

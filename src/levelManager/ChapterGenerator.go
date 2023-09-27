@@ -13,6 +13,14 @@ func CreateChapterGen() Chapter {
 func ChangeChapter(c *Chapter) {
 	SetLevels(c, rand.Intn(4)+7)
 	SetActualLevel(c, 0)
+	ChangeActualChapter(c)
+	if GetActualLevel(c) == GetLevels(c)/2 && GetActualChapter(c) == 1 {
+		ChangeDifficulty(c)
+	} else if GetActualLevel(c) == GetLevels(c)/2 && GetActualChapter(c) == 3 {
+		ChangeDifficulty(c)
+	} else if GetActualChapter(c) == GetLevels(c) && GetActualChapter(c) == 4 {
+		ChangeDifficulty(c)
+	}
 }
 
 func RandomZone(c *Chapter) {

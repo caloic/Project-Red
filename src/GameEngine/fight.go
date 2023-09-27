@@ -30,3 +30,16 @@ func BattleArena() {
 		fmt.Println("Le joueur principal a été vaincu.")
 	}
 }
+
+func EnemiesGenerator(c *levelManager.Chapter) {
+	difficulty := levelManager.GetDifficulty(c)
+	switch difficulty {
+	case 1:
+		for {
+
+		}
+	case 2:
+	case 3:
+	case 4:
+	}
+}

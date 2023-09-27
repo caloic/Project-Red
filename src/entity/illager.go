@@ -5,8 +5,9 @@ import (
 )
 
 type Illager struct {
-	Type  enum.Illager
-	Lifes int
+	Type   enum.Illager
+	Lifes  int
+	attack int
 }
 
 func GetType(i *Illager) enum.Illager {
@@ -23,4 +24,12 @@ func GetIllagerLifes(i *Illager) int {
 
 func SetIllageerLifes(i *Illager, newIllagerLifes int) {
 	i.Lifes = newIllagerLifes
+}
+
+func GetIllagerAttack(i *Illager) int {
+	return i.attack
+}
+
+func SetIllagerAttack(i *Illager, newIllagerAttack int) {
+	i.attack = newIllagerAttack
 }

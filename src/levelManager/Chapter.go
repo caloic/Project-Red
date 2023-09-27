@@ -3,9 +3,11 @@ package levelManager
 import "ftl/src/enum"
 
 type Chapter struct {
-	Levels      int
-	ActualLevel int
-	LevelZone   enum.Zone
+	Difficulty    int
+	ActualChapter int
+	Levels        int
+	ActualLevel   int
+	LevelZone     enum.Zone
 }
 
 func GetLevels(c *Chapter) int {
@@ -30,4 +32,20 @@ func GetLevelZone(c *Chapter) enum.Zone {
 
 func SetLevelZone(c *Chapter, newLevelZone enum.Zone) {
 	c.LevelZone = newLevelZone
+}
+
+func GetActualChapter(c *Chapter) int {
+	return c.ActualChapter
+}
+
+func ChangeActualChapter(c *Chapter) {
+	c.ActualChapter = c.ActualChapter + 1
+}
+
+func GetDifficulty(c *Chapter) int {
+	return c.Difficulty
+}
+
+func ChangeDifficulty(c *Chapter) {
+	c.Difficulty = c.Difficulty + 1
 }

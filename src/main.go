@@ -1,20 +1,8 @@
 package main
 
-import (
-	"fmt"
-	"ftl/src/GameEngine"
-	"ftl/src/entity"
-	"ftl/src/levelManager"
-	"ftl/src/shop"
-)
+import "ftl/src/levelManager"
 
 func main() {
-	c := levelManager.CreateChapterGen()
-	fmt.Println(c)
-	levelManager.ChangeChapter(&c)
-	fmt.Println(c)
-	levelManager.RandomPath(&c)
-	shop.Shop()
-	entity.CreatePlayer()
-	GameEngine.BattleArena()
+	chap := levelManager.CreateChapter()
+	levelManager.RandomPath(&chap)
 }

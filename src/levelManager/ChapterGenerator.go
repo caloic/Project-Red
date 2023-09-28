@@ -4,10 +4,11 @@ import (
 	"fmt"
 	"ftl/src/enum"
 	"math/rand"
+	"strconv"
 )
 
-func CreateChapterGen() Chapter {
-	return Chapter{Levels: rand.Intn(4) + 7, ActualLevel: 0}
+func CreateChapter() Chapter {
+	return Chapter{Levels: rand.Intn(4) + 7, ActualLevel: 1}
 }
 
 func ChangeChapter(c *Chapter) {
@@ -17,6 +18,10 @@ func ChangeChapter(c *Chapter) {
 }
 
 func ChangeLevel(c *Chapter, zone enum.Zone) {
+	if GetActualLevel(c) == GetLevels(c) {
+		ChangeChapter(c)
+	}
+	fmt.Println(c)
 	SetLevelZone(c, zone)
 	SetActualLevel(c, GetActualLevel(c)+1)
 	fmt.Println(zone)
@@ -27,6 +32,7 @@ func ChangeLevel(c *Chapter, zone enum.Zone) {
 	} else if GetActualChapter(c) == GetLevels(c) && GetActualChapter(c) == 4 {
 		ChangeDifficulty(c)
 	}
+	fmt.Println(c)
 }
 
 func RandomPath(c *Chapter) {
@@ -38,6 +44,7 @@ func RandomPath(c *Chapter) {
 		randomIndex := rand.Intn(int(enum.Bonus))
 		randomZone := enum.Zone(randomIndex)
 		path = append(path, randomZone)
+		fmt.Print("Chemin " + strconv.Itoa(choice) + " : ")
 		switch randomZone {
 		case enum.Safe:
 			fmt.Println("Safe")
@@ -54,8 +61,9 @@ func RandomPath(c *Chapter) {
 	}
 	fmt.Println(path)
 	fmt.Scan(&pathchoice)
-	for pathchoice > len(path) {
+	for pathchoice > len(path) || pathchoice <= 0 {
+		fmt.Println("Ce chemain n'existe pas")
 		fmt.Scan(&pathchoice)
 	}
-	ChangeLevel(c, path[pathchoice])
+	ChangeLevel(c, path[pathchoice-1])
 }

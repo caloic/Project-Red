@@ -13,7 +13,7 @@ func main() {
 	fmt.Println(c)
 	levelManager.ChangeChapter(&c)
 	fmt.Println(c)
-	levelManager.RandomZone(&c)
+	levelManager.RandomPath(&c)
 	shop.Shop()
 	entity.CreatePlayer()
 	GameEngine.BattleArena()

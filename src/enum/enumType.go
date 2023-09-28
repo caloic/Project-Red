@@ -2,7 +2,7 @@ package enum
 
 type Illager int
 type Sword int
-type Axe int
+type Special int
 type Zone int
 type Armors int
 
@@ -25,10 +25,13 @@ const (
 )
 
 const (
-	StoneAxe   Axe = iota
-	IronAxe    Axe = iota
-	Golden     Axe = iota
-	DiamondAxe Axe = iota
+	StoneAxe   Special = iota
+	IronAxe    Special = iota
+	Golden     Special = iota
+	DiamondAxe Special = iota
+	Bow        Special = iota
+	CrossBow   Special = iota
+	Shield     Special = iota
 )
 
 const (

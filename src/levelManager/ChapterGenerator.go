@@ -14,6 +14,12 @@ func ChangeChapter(c *Chapter) {
 	SetLevels(c, rand.Intn(4)+7)
 	SetActualLevel(c, 0)
 	ChangeActualChapter(c)
+}
+
+func ChangeLevel(c *Chapter, zone enum.Zone) {
+	SetLevelZone(c, zone)
+	SetActualLevel(c, GetActualLevel(c)+1)
+	fmt.Println(zone)
 	if GetActualLevel(c) == GetLevels(c)/2 && GetActualChapter(c) == 1 {
 		ChangeDifficulty(c)
 	} else if GetActualLevel(c) == GetLevels(c)/2 && GetActualChapter(c) == 3 {
@@ -23,7 +29,7 @@ func ChangeChapter(c *Chapter) {
 	}
 }
 
-func RandomZone(c *Chapter) {
+func RandomPath(c *Chapter) {
 	choice := rand.Intn(4) + 1
 	var path []enum.Zone
 	var pathchoice int
@@ -48,8 +54,8 @@ func RandomZone(c *Chapter) {
 	}
 	fmt.Println(path)
 	fmt.Scan(&pathchoice)
-	switch pathchoice {
-	case 1:
-		fmt.Println()
+	for pathchoice > len(path) {
+		fmt.Scan(&pathchoice)
 	}
+	ChangeLevel(c, path[pathchoice])
 }

@@ -11,10 +11,12 @@ type Arena struct {
 	EnemiesList []entity.Illager
 }
 
-func BattleArena() {
+func BattleArena(c *levelManager.Chapter) {
 	arena := Arena{Round: 1}
 
 	mainPlayer := entity.GetPlayerList()[0]
+
+	EnemiesGenerator(arena, c)
 
 	for len(arena.EnemiesList) > 0 && mainPlayer.Hp > 0 {
 		fmt.Println("Début du tour:", arena.Round)
@@ -32,15 +34,17 @@ func BattleArena() {
 	}
 }
 
-func EnemiesGenerator(c *levelManager.Chapter) {
+func EnemiesGenerator(arena Arena, c *levelManager.Chapter) {
 	difficulty := levelManager.GetDifficulty(c)
+
 	switch difficulty {
 	case 1:
-		for {
-
-		}
+		entity.IllagerCreator(1, arena)
 	case 2:
+		entity.IllagerCreator(2, arena)
 	case 3:
+		entity.IllagerCreator(3, arena)
 	case 4:
+		entity.IllagerCreator(4, arena)
 	}
 }

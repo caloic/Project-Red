@@ -18,10 +18,12 @@ func CreatePlayer() {
 	}
 }
 
-func LooseHealth(p Player, pv int) {
-	p.Hp = p.Hp - pv
-}
-
 func GetPlayerList() []Player {
 	return playerList
+}
+
+func PlayerAttack(e Illager, player Player) {
+	if {
+
+	}
 }
